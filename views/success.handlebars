@@ -1,0 +1,24 @@
+<head>
+  <title>PAGO EXITOSO</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">   
+    <div class="card-group mt-3">
+
+      <div class="card text-center border-info">
+        <div class="card-body">
+          <h4 class="card-title">COMPRA EXITOSA</h4>
+          <p class="card-text">
+              Tipo de pago :  {{payment_type}} <br>
+              Referencia:   {{external_reference}} <br>
+              ID:  {{collection_id}} <br>
+            </p>
+          <a href="/" class="btn btn-primary"  onclick="location.href='/' "'>RETORNAR</a>
+        </div>
+      </div>          
+    </div>
+  </div>  
+</body>
