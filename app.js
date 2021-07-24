@@ -1,4 +1,5 @@
 var express = require('express');
+var {json} = require("express")
 var exphbs  = require('express-handlebars');
 var mercadopago = require("mercadopago")
 var port = process.env.PORT || 3000
@@ -34,6 +35,8 @@ const payer= {
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
+
+app.use(json())
 
 app.use(express.static('assets'));
  
